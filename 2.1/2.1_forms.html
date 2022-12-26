@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Create an Account</h1>
+    <div>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email">
+    </div><br>
+    <div>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password">
+    </div><br>
+    <div>
+        <label for="age">Age:</label><br>
+        <select name="age" id="age">
+            <option value="">Select Age</option>
+            <option value="group1">Under 18</option>
+            <option value="group2">18 to 30</option>
+            <option value="group3">30 to 50</option>
+            <option value="group4">50 to 70</option>
+            <option value="group5">70+</option>
+        </select>
+    </div><br>
+    <div>
+        <label for="about">Tell us a little about yourself:</label><br>
+        <textarea name="about" id="about" cols="40" rows="10"></textarea>
+    </div><br>
+    <div>
+        <input type="checkbox" name="accepts_tos" value="yes"> I agree to the
+        <a href="#">terms of service</a>
+    </div><br>
+    <div>
+        <input type="submit" value="Sign up">
+    </div>
+</body>
+</html>
