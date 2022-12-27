@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .clr {
+            clear: both;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 30px auto;
+        }
+
+        #header {
+            background: #ef9606;
+            border: 1px solid #333;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        #header p {
+            text-align: center;
+        }
+
+        #main {
+            background: #c638d9;
+            border: 1px solid #333;
+            padding: 200px;
+            margin-bottom: 5px;
+            padding-right: 5px;
+            padding-top: 5px;
+            float: right;
+            width: 68%;
+        }
+
+        #main p {
+            text-align: right;
+        }
+
+        #side {
+            background: #0b7d2d;
+            border: 1px solid #333;
+            padding: 200px;
+            margin-bottom: 5px;
+            padding-left: 5px;
+            padding-top: 5px;
+            float: left;
+            width: 30%;
+        }
+
+        #side p {
+            text-align: left;
+        }
+
+        #footer {
+            background: #07377a;
+            border: 1px solid #333;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+
+        #footer p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="header" class="box">
+            <p>Header</p>
+        </div>
+        <div id="main" class="box">
+            <p>Main</p>
+        </div>
+        <div id="side" class="box">
+            <p>Side</p>
+        </div>
+        <div class="clr"></div>
+        <div id="footer" class="box">
+            <p>Footer</p>
+        </div>
+    </div>
+</body>
+</html>
