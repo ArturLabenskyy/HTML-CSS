@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9.3 side-part disapperance</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            padding: 30% 10px;
+        }
+
+        .side-part {
+            float: left;
+            background: rgb(172, 11, 11);
+            height: 100vh;
+
+        }
+
+        .main {
+            background: rgb(128, 10, 10);
+            height: 100vh;
+        }
+
+        @media(max-width: 700px) {
+            .side-part {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="side-part"><h1>Side-part</h1></div>
+    <div class="main"><h1>Main</h1></div>
+</body>
+</html>
