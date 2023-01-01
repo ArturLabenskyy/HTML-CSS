@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Navbar</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        .navbar {
+            background: rgb(216, 213, 213);
+            border: gray solid 1px;
+            padding: 0 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            flex-direction: row;
+            height: 7vw;
+            align-items: center;
+        }
+
+        .box {
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        .left-side {
+
+            margin-right: auto;
+        }
+        .box h1{
+            font-size: medium;
+            margin: auto;
+            font-size: 3vh;
+        }
+        
+        .left-side h1 {
+            font-size: 4vh;
+        }
+
+
+        /* ----------MOBILE------------- */
+        @media(max-width: 700px) {
+            .navbar {
+                height: 40vh;
+                flex-direction: column;
+            }
+
+            .left-side {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="box left-side"><h1>APPLESEEDS</h1></div>
+        <div class="box small-text"><h1>HOME</h1></div>
+        <div class="box small-text"><h1>ABOUT</h1></div>
+        <div class="box small-text"><h1>PORTFOLIO</h1></div>
+        <div class="box small-text"><h1>CONTACT</h1></div>
+    </header>
+</body>
+</html>
