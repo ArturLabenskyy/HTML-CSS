@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive-style</title>
+
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: rgb(219, 143, 143);
+            color: #ffffff;
+            text-align: center;
+            padding-top: 5rem;
+        }
+
+        h1, p {
+            display: none;
+        }
+
+
+        /* FullHD */
+        @media(min-width: 1080px) {
+            body {
+                background: black;
+            }
+
+            .fullhd h1, .fullhd p {
+                display: block;
+            }
+        }
+
+        /* Tablet */
+        @media(min-width:501px) and (max-width:1079px) {
+            body {
+                background: rgb(14, 214, 154)4;
+            }
+
+            .tablet h1, .tablet p {
+                display: block;
+            }
+        }
+
+        /* Phone */
+        @media(max-width: 500px) {
+            body {
+                background: #cabd2f;
+            }
+
+            .phone h1, .phone p {
+                display: block;
+            }
+        }
+  
+    </style>
+</head>
+
+<body>
+    <div class="fullhd">
+        <h1>FullHd</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, repellendus!</p>
+    </div>
+    <div class="tablet">
+        <h1>Tablet</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, omnis.</p>
+    </div>
+    <div class="phone">
+        <h1>Phone</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, dignissimos!</p>
+    </div>
+</body>
+</html>
