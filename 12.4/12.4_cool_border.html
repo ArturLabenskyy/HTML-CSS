@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Border</title>
+    <style>
+			body {
+				background-color: black;
+			}
+
+			p {
+				margin: 0;
+				color: aliceblue;
+				font-family: 'Times New Roman', Times, serif;
+				font-size: 3rem;
+			}
+        #content {
+  position: relative;
+	margin: auto;
+  width: 400px;
+  height: 300px;
+}
+
+#content:before,
+#content:after,
+#content>:first-child:before,
+#content>:first-child:after {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-color: rgb(224, 43, 43);
+  border-style: solid;
+  content: ' ';
+}
+
+#content:before {
+  top: 0;
+  left: 0;
+  border-width: 4px 0 0 4px
+}
+
+#content:after {
+  top: 0;
+  right: 0;
+  border-width: 4px 4px 0 0
+}
+
+#content>:first-child:before {
+  bottom: 0;
+  right: 0;
+  border-width: 0 4px 4px 0
+}
+
+#content>:first-child:after {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 4px 4px
+}
+    </style>
+</head>
+<body>
+    <div id="content"><p>Cool border</p></div>
+</body>
+</html>
