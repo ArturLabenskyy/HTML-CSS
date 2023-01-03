@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background: rgb(137, 134, 134);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 1rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    p {
+      margin: auto;
+      padding: auto;
+    }
+
+    .nav-box {
+      position: relative;
+      margin: 0 1rem;
+      width: 100px;
+      height: 30px;
+      overflow: hidden;
+    }
+
+    .nav-box:hover {
+      cursor: pointer;
+    }
+
+    .nav-box:before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      top: 0;
+      left: -100px;
+      border-top: black 1px solid;
+      transition: all 0.5s ease-in;
+    }
+
+    .nav-box:after {
+      content: '';
+      position: absolute;
+      width: 100px;
+      bottom: 0;
+      right: -100px;
+      border-bottom: black 1px solid;
+      transition: all 0.5s ease-in;
+    }
+
+    .nav-box:hover:before {
+      transform: translateX(100px);
+    }
+
+    .nav-box:hover:after {
+      transform: translateX(-100px);
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-box"><p></p>Home</div>
+    <div class="nav-box"><p>About</p></div>
+    <div class="nav-box"><p>Services</p></div>
+    <div class="nav-box"><p>Portfolio</p></div>
+    <div class="nav-box"><p>Contact</p></div>
+  </header>
+</body>
+</html>
