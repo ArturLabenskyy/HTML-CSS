@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Transition</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .animate-box {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      background: #750c0c;
+      overflow: hidden;
+    }
+    .animate-box:after {
+      content: '';
+      position: absolute;
+      left: 500px;
+      height: 500px;
+      width: 500px;
+      background: #9c11a3;
+      transition: all 1.5s ease-in-out;
+    }
+
+    .animate-box:hover:after {
+      transform: translateX(-500px);
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="animate-box">
+
+  </div>
+</body>
+</html>
