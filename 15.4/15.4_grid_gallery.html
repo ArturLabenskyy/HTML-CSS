@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Gallery</title>
+  <style>
+    .grid {
+      height: 90vh;
+      width: 100%;
+      display: grid;
+      grid-template-areas: 
+        'image1 image1 image2 image2 image2 image3 image4 image4'
+        'image1 image1 image2 image2 image2 image3 image4 image4'
+        'image5 image5 image2 image2 image2 image8 image8 image9'
+        'image5 image5 image6 image6 image7 image8 image8 image9'
+        'image5 image5 image6 image6 image13 image13 image13 image9'
+        'image10 image11 image11 image12 image13 image13 image13 image14'
+        'image10 image11 image11 image12 image13 image13 image13 image14';
+      grid-gap: 1rem;
+    }
+
+    .image1 {
+      grid-area: image1;
+      background: url(./img/1.jpeg) no-repeat center center/cover;
+    }
+    .image2 {
+      grid-area: image2;
+      background: url(./img/2.jpeg) no-repeat center center/cover;
+    }
+    .image3 {
+      grid-area: image3;
+      background: url(./img/3.jpeg) no-repeat center center/cover;
+    }
+    .image4 {
+      grid-area: image4;
+      background: url(./img/4.jpeg) no-repeat center center/cover;
+    }
+    .image5 {
+      grid-area: image5;
+      background: url(./img/5.jpeg) no-repeat center center/cover;
+    }
+    .image6 {
+      grid-area: image6;
+      background: url(./img/6.jpeg) no-repeat center center/cover;
+    }
+    .image7 {
+      grid-area: image7;
+      background: url(./img/7.jpeg) no-repeat center center/cover;
+    }
+    .image8 {
+      grid-area: image8;
+      background: url(./img/8.jpeg) no-repeat center center/cover;
+    }
+    .image9 {
+      grid-area: image9;
+      background: url(./img/9.jpeg) no-repeat center center/cover;
+    }
+    .image10 {
+      grid-area: image10;
+      background: url(./img/10.jpeg) no-repeat center center/cover;
+    }
+    .image11 {
+      grid-area: image11;
+      background: url(./img/11.jpeg) no-repeat center center/cover;
+    }
+    .image12 {
+      grid-area: image12;
+      background: url(./img/12.jpeg) no-repeat center center/cover;
+    }
+    .image13 {
+      grid-area: image13;
+      background: url(./img/13.jpeg) no-repeat center center/cover;
+    }
+    .image14 {
+      grid-area: image14;
+      background: url(./img/14.jpeg) no-repeat center center/cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="image1 box"></div>
+    <div class="image2 box"></div>
+    <div class="image3 box"></div>
+    <div class="image4 box"></div>
+    <div class="image5 box"></div>
+    <div class="image6 box"></div>
+    <div class="image7 box"></div>
+    <div class="image8 box"></div>
+    <div class="image9 box"></div>
+    <div class="image10 box"></div>
+    <div class="image11 box"></div>
+    <div class="image12 box"></div>
+    <div class="image13 box"></div>
+    <div class="image14 box"></div>
+  </div>
+</body>
+</html>
