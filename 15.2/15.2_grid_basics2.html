@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid basics 2</title>
+  <style>
+
+    .grid-box {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 0.5rem;
+    }
+
+    .box {
+      border-radius: 10px;
+      min-height: 15vh;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .box:first-child {
+      grid-column: 1 / 5;
+    }
+
+    .box:nth-child(2) {
+      grid-column: 1 / 3;
+      grid-row: 2 / 4;
+    }
+
+    .box:nth-child(3) {
+      grid-column: 3 / 5;
+    }
+
+    .box:nth-child(4) {
+      grid-column: 3 / 4;
+    }
+
+    .box:last-child {
+      grid-column: 4 / 5;
+    }
+
+    .header {
+      background: rgb(197, 31, 9);
+    }
+
+    .sidebar {
+      background: rgb(13, 126, 224);
+    }
+
+    .content {
+      background: rgb(13, 133, 17);
+    }
+
+    .sidebar2 {
+      background: rgb(98, 10, 132);
+    }
+
+    .footer {
+      background: rgb(210, 210, 18);
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-box">
+    <div class="header box">Header</div>
+    <div class="sidebar box">Sidebar</div>
+    <div class="content box">Content</div>
+    <div class="sidebar2 box">Sidebar2</div>
+    <div class="sidebar2 box">Sidebar2</div>
+  </div>
+</body>
+</html>
